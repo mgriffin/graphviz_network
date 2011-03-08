@@ -4,7 +4,12 @@ graph switches {
   sw3 [ label="Switch 3\n192.168.1.252" ];
   sw4 [ label="Another Switch\n192.168.1.251" ];
   
+  router [ label="Cisco\nVPN Router\n192.168.1.250"];
+  ap1 [ label="Wireless\nAccess Point\n192.168.1.61"];
+  
+  router -- sw1;
   sw1 -- sw2;
   sw1 -- sw3;
+  sw1 -- ap1;
   sw2 -- sw4;
 }
