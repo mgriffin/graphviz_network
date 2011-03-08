@@ -1,4 +1,6 @@
 graph switches {
   sw1 [ label="Switch 1\n192.168.1.101" ];
   sw2 [ label="Switch 2\n192.168.1.100" ];
+  
+  sw1 -- sw2;
 }
