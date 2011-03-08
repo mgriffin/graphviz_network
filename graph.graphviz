@@ -1,0 +1,3 @@
+graph switches {
+  sw1 [ label="Switch 1\n192.168.1.101" ];
+}
