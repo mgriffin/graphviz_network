@@ -1,4 +1,13 @@
 graph switches {
+  node [
+    shape=box, 
+    fontname="arial",
+    fontsize=8,
+    style=filled,
+    color="#d3edea"
+  ];
+  splines="compound"
+  
   sw1 [ label="Switch 1\n192.168.1.101" ];
   sw2 [ label="Switch 2\n192.168.1.100" ];
   sw3 [ label="Switch 3\n192.168.1.252" ];
