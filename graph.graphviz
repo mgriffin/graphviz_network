@@ -1,4 +1,9 @@
 graph switches {
+  // colours for the lines relate to the line speed
+  // #00bbff is for gigabit
+  // #ffbb00 is for 100Mbit
+  // #bbff00 is for 10 Mbit
+  
   node [
     shape=box, 
     fontname="arial",
@@ -21,10 +26,10 @@ graph switches {
   cloud [ label="The Internet" shape=none, image="images\cloud.png" labelloc=b color="#ffffff"]
   
   cloud -- router;
-  router -- sw1;
-  sw1 -- sw2;
-  sw1 -- sw3;
-  sw1 -- ap1;
-  sw2 -- sw4;
-  sw3 -- servers;
+  router -- sw1 [color="#00bbff"];
+  sw1 -- sw2 [color="#ffbb00"];
+  sw1 -- sw3 [color="#ffbb00"];
+  sw1 -- ap1 [color="#bbff00"];
+  sw2 -- sw4 [color="#ffbb00"];
+  sw3 -- servers [color="#ffbb00"];
 }
