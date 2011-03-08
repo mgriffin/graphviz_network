@@ -16,6 +16,9 @@ graph switches {
   router [ label="Cisco\nVPN Router\n192.168.1.250" color="#cf7b7b"];
   ap1 [ label="Wireless\nAccess Point\n192.168.1.61" color="#a8d1b0"];
   
+  cloud [ label="The Internet" shape=none, image="images\cloud.png" labelloc=b color="#ffffff"]
+  
+  cloud -- router;
   router -- sw1;
   sw1 -- sw2;
   sw1 -- sw3;
