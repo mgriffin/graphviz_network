@@ -4,6 +4,9 @@ graph switches {
   // #ffbb00 is for 100Mbit
   // #bbff00 is for 10 Mbit
   
+  label="Network Diagram";
+  fontname="arial";
+  
   node [
     shape=box, 
     fontname="arial",
