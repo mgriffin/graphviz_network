@@ -5,7 +5,11 @@ Look through the history of the repository to see the steps that I used to creat
 Each step has the code and the resultant image that was created.
 
 Once graphviz was installed correctly, I used the command:
-    dot.exe -Tpng graph.graphviz -o graph.png
+
+```
+dot.exe -Tpng graph.graphviz -o graph.png
+```
+
 to create the images.
 
 (Or, use `make` on a GNU/Linux system)
