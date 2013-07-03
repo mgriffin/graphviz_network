@@ -12,6 +12,6 @@ to create the images.
 
 ### Icons
 
-The [Cisco icons are available for download](http://www.cisco.com/web/about/ac50/ac47/2.html)
+The [Cisco icons can be downloaded](http://www.cisco.com/web/about/ac50/ac47/2.html) separately.
 
 (converted the `.jpg` to `.png`)
