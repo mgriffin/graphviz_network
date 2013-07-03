@@ -12,8 +12,6 @@ to create the images.
 
 ### Icons
 
-The Cisco icons are available for download, at the following location:
-
-[http://www.cisco.com/web/about/ac50/ac47/2.html](Cisco Icons)
+The [Cisco icons are available for download](http://www.cisco.com/web/about/ac50/ac47/2.html)
 
 (converted the `.jpg` to `.png`)
