@@ -1,0 +1,44 @@
+graph switches {
+  // colours for the lines relate to the line speed
+  // #00bbff is for gigabit
+  // #ffbb00 is for 100Mbit
+  // #bbff00 is for 10 Mbit
+  
+  label="Network Diagram";
+  fontname="arial";
+  
+  node [
+    shape=box, 
+    fontname="arial",
+    fontsize=8,
+    style=filled,
+    color="#d3edea"
+  ];
+  splines="compound"
+  
+  sw1 [ label="192.168.1.101" shape=none image="images/gigabitSwitch.png" labelloc=b color="#ffffff"];
+  sw2 [ label="192.168.1.100" shape=none image="images/gigabitSwitch.png" labelloc=b color="#ffffff"];
+  sw3 [ label="192.168.1.252" shape=none image="images/gigabitSwitch.png" labelloc=b color="#ffffff"];
+  sw4 [ label="192.168.1.251" shape=none image="images/gigabitSwitch.png" labelloc=b color="#ffffff"];
+  
+
+  router [ label= "192.168.1.250", 
+           shape=none ,
+           image="images/router.png" ,
+           labelloc=b ,
+           color="#ffffff" ];
+
+  ap1 [ label="192.168.1.61" shape=none image="images/wireless.png" labelloc=b color="#ffffff"];
+  
+  servers [ label="Servers" shape=none image="images/servers.png" labelloc=b color="#ffffff" ];
+  
+  cloud [ label="The Internet" shape=none, image="images/cloud.png" labelloc=b color="#ffffff"]
+  
+  cloud -- router;
+  router -- sw1 [color="#00bbff"];
+  sw1 -- sw2 [color="#ffbb00"];
+  sw1 -- sw3 [color="#ffbb00"];
+  sw1 -- ap1 [color="#bbff00"];
+  sw2 -- sw4 [color="#ffbb00"];
+  sw3 -- servers [color="#ffbb00"];
+}
