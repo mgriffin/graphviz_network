@@ -1,6 +1,8 @@
 How to create a network diagram with Graphviz
 =============================================
 
+This repository contains the code used in my [graphviz tutorial blog post](https://mikegriffin.ie/blog/20110308-a-graphviz-tutorial).
+
 Look through the history of the repository to see the steps that I used to create the network diagram.
 Each step has the code and the resultant image that was created.
 
